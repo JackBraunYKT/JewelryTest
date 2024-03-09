@@ -119,6 +119,7 @@ const Filter = React.memo(({ onSubmit, onReset }: Props) => {
                   as="select"
                   className="w-full block rounded-md border border-gray-200 py-[9px] pl-2 text-sm outline-2"
                   name="brand"
+                  disabled={values.field !== "brand"}
                 >
                   <option value="" disabled>
                     Выберете
